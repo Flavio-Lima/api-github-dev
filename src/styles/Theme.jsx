@@ -13,6 +13,7 @@ const rem = (px) => `${round(px / 16)}rem`;
 export const theme = {
   colors: {
     white: "#FFFFFF",
+    champagne: '#ecf0f1',
     black: "#0C0D0F",
     red: "#E03131",
     orange: "#E8590C",
@@ -33,8 +34,17 @@ export const theme = {
     gray700: "#424449",
     gray800: "#1D1E21",
     gray900: "#141518",
+    metalDark: "#7f8c8d",
+
     primary: "#F83600",
     secondary: "#FE8C00",
+    container: "#2d2d2d",
+    background: "#191919",
+    danger: '#f37272',
+    light: '#ecf0f1',
+    dark: '#233240',
+    link: '#3498db',
+
   },
   fontFamily: {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
@@ -48,10 +58,19 @@ export const theme = {
     base: rem(16),
     lg: rem(18),
     xl: rem(20),
+    normal: rem(1),
     "2xl": rem(24),
     "3xl": rem(32),
     "4xl": rem(40),
     "5xl": rem(64),
+  },
+  breakpoints: {
+    xs: '0',
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
+    xxl: '1400px',
   },
 };
 
