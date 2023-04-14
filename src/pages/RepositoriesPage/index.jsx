@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
+
+import Profile from './Profile';
 
 import {Container, Sidebar, Main} from "./styles"
 
 function RepositoriesPage() {
   return (
     <Container>
-      <Sidebar>Sidebar</Sidebar>
+      <Sidebar> <Profile /> </Sidebar>
       <Main>Main</Main>
     </Container>
   )
 }
 
-export default RepositoriesPage
+export default RepositoriesPage;
