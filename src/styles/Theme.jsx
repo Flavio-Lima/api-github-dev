@@ -7,10 +7,11 @@ export const theme = {
   colors: {
     white: "#FFFFFF",
     champagne: '#ecf0f1',
+    champagneDark: '#bdc3c7',
     black: "#0C0D0F",
     red: "#E03131",
     orange: "#E8590C",
-    yellow: "#FCC419",
+    yellow: "#F1C419",
     green: "#23DB42",
     teal: "#89DD13",
     cyan: "#3BC9DB",
