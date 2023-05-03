@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 
 import Profile from './Profile';
@@ -5,6 +6,8 @@ import Filter from './Filter';
 import Repositories from './Repositories';
 
 import {Container, Sidebar, Main} from "./styles"
+
+import { getLangsFrom } from '../../services/api';
 
 function RepositoriesPage() {
   const user = {
@@ -57,13 +60,7 @@ function RepositoriesPage() {
     },
   ]
 
-  // Calculo dos filters
-  const languages = [
-    {name: 'JavaScript', count: 5, color: '#FCC419'},
-    {name: 'CSS', count: 2, color: '#67bbf3'},
-    {name: 'TypeScript', count: 1, color: '#1578b9'},
-    {name: 'HTML', count: 2, color: '#db5b34'},
-  ];
+  const languages = getLangsFrom(repositories)
 
   return (
     <Container>
