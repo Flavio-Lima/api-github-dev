@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React from 'react';
+import React, {useState} from 'react';
 
 import Profile from './Profile';
 import Filter from './Filter';
@@ -10,6 +10,8 @@ import {Container, Sidebar, Main} from "./styles"
 import { getLangsFrom } from '../../services/api';
 
 function RepositoriesPage() {
+  const [currentLanguage, setCurrentLanguage] = useState();
+
   const user = {
     login: 'Flavio-Lima',
     name: 'Flávio Lima',
@@ -68,11 +70,19 @@ function RepositoriesPage() {
 
   const languages = getLangsFrom(repositories)
 
+  const onFilterClick = (language) => {
+    setCurrentLanguage(language);
+  };
+
   return (
     <Container>
       <Sidebar>
         <Profile user={user} />
-        <Filter languages={languages} />
+        <Filter
+          languages={languages}
+          currentLanguage={currentLanguage}
+          onClick={onFilterClick}
+        />
       </Sidebar>
       <Main>
         <Repositories repositories={repositories} />
