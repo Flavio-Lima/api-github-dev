@@ -85,7 +85,10 @@ function RepositoriesPage() {
         />
       </Sidebar>
       <Main>
-        <Repositories repositories={repositories} />
+        <Repositories
+          repositories={repositories}
+          currentLanguage={currentLanguage}
+        />
       </Main>
     </Container>
   )
