@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 import React, {useState, useEffect} from 'react';
 
+import { useParams } from 'react-router-dom';
+
 import Profile from './Profile';
 import Filter from './Filter';
 import Repositories from './Repositories';
@@ -10,6 +12,8 @@ import {Loading, Container, Sidebar, Main} from "./styles"
 import { getUser, getRepos, getLangsFrom } from '../../services/api';
 
 function RepositoriesPage() {
+  const { login } = useParams();
+
   const [user, setUser] = useState();
   const [repositories, setRepositories] = useState();
   const [languages, setLanguages] = useState();
@@ -20,8 +24,8 @@ function RepositoriesPage() {
       // getUser();
 
       const [userResponse, repositoriesResponse] = await Promise.all([
-        getUser('Flavio-Lima'),
-        getRepos('Flavio-Lima')
+        getUser(login),
+        getRepos(login),
       ])
 
       setUser(userResponse.data);
