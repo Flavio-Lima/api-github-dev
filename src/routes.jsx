@@ -8,7 +8,7 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route path="/:login/repositories" element={<RepositoriesPage />} />
-      <Route path="/" element={<MainPage />} />
+      <Route path="/api-github-dev" element={<MainPage />} />
     </Routes>
   );
 }
