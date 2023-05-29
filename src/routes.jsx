@@ -8,7 +8,7 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route path="/:login/repositories" element={<RepositoriesPage />} />
-      <Route path="/api-github-dev" element={<MainPage />} />
+      <Route path="https://flavio-lima.github.io/api-github-dev/" element={<MainPage />} />
     </Routes>
   );
 }
