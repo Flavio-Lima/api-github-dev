@@ -26,9 +26,22 @@ export const Sidebar = styled.aside`
 export const Main = styled.section`
   background:  ${(props) => props.theme.colors.container};
   width: 100%;
-  height: 100%;
-  overflow-y: hidden;
+  height: 100vh;
+  overflow-y: auto;
   padding: 40px;
+
+  ::-webkit-scrollbar{
+    background-color: ${(props) => props.theme.colors.gray900};
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: ${(props) => props.theme.colors.gray700};
+    border-radius: 10px;
+  }
+
+
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}){
     height: 100%;

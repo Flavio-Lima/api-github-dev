@@ -31,7 +31,7 @@ export const Selector = styled.button`
   &:hover,
   &.selected {
     background: ${(props) => props.color || props.theme.colors.light};
-    color: ${(props) => props.color ? props.theme.colors.white : props.theme.color.black};
+    color: ${(props) => props.color ? props.theme.colors.white : props.theme.colors.black};
     transform: translateX(5px) scale(1.02);
   }
 
