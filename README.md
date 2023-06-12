@@ -27,4 +27,4 @@ Sinta-se à vontade para contribuir com este projeto abrindo pull requests, rela
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão relacionada a este projeto, entre em contato com [seu-email@example.com](mailto:flavio.lima981@gmail.com).
+Se você tiver alguma dúvida ou sugestão relacionada a este projeto, entre em contato com [flavio.lima981@gmail.com](mailto:flavio.lima981@gmail.com).
