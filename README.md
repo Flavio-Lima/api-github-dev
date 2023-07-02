@@ -21,10 +21,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - HTML: Utilizado para estruturar e definir o conteúdo do projeto.
 - Styled Components: Uma biblioteca para estilização de componentes React, permitindo escrever estilos em JavaScript.
 
-## Contribuição
-
-Sinta-se à vontade para contribuir com este projeto abrindo pull requests, relatando problemas ou sugerindo melhorias.
-
 ## Contato
 
 Se você tiver alguma dúvida ou sugestão relacionada a este projeto,  entre em contato com [flavio.lima981@gmail.com](mailto:flavio.lima981@gmail.com).
